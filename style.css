@@ -36,3 +36,140 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
+
+<!-- Added all of my base CSS styles such as color, font, size, etc. -->
+
+/*
+ID: page-header - top hero area
+*/
+#page-header {
+    Padding: 5rem 2rem 3rem;
+    text-align: center;
+    border-bottom 1px solid #222
+}
+
+#page-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 4rem);
+    letter-spacing: 0.08em;
+    text transform: uppercase;
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(232, 255, 0, 0.35);
+}
+
+#page-header .subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Class: transformation - each section wrapper
+*/
+.transformation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 4rem;
+    border-bottom: 1px solid #1a1a1a;
+    min-height: 100vh;
+}
+.transformation:nth-child(odd) {
+    flex-direction: row;
+}
+
+.transformation:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: var(--surface);
+}
+
+/*
+Class: lable-block - text discription side
+*/
+.label-block {
+    flex: 1 1 300px;
+    max-width: 480px;
+}
+
+.transform-number {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    display: block;
+    line height: 1;
+    margin-bottom: 0.5rem;
+    -webkit-text-stroke: 1px #333;
+}
+
+/*
+class: transform-title - heading for each transformation 
+*/
+.transform-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+}
+
+/* class: manifesto concept - links to glitch studies reading 
+*/
+.manifesto-concept {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+    border-left: 2px solid var(--accent2);
+    padding-left: 0.75rem;
+}
+
+/* class: css-technique - names of css properties used */
+.css-technique {
+    font-size: 0.85rem;
+    color: var(--accent3);
+    margin-bottom: 0.6rem;
+  font-family: var(--font-display);
+}
+
+/* class: connection - explains how css ties into the concept 
+*/
+.connection {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+code {
+   Background: #1a1a1a;
+   padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    color: var (--accent3);
+}
+
+/*
+Class: image-wrapper - contains transformed image
+*/
+.image-wrapper {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*
+class: glitch-img - base style for all transformed images
+*/
+.glitch-img {
+    display: block;
+    width: 100%;
+    max-width: var(--img-max);
+    height: auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
