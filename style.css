@@ -1,0 +1,38 @@
+/*
+Style.css -A2: One Image x5
+Project structure: index.html, style.css, images/image.png
+*/
+
+<!-- specifications of CSS file -->
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --accent: #e8ff00;
+  --accent2: #ff2d55;
+  --accent3: #00e5ff;
+  --text-primary: #f0f0f0;
+  --text-muted: #888888;
+  --font-display: 'courier new', monospace;
+  --font-body: Georgia, 'times new roman', serif;
+  --img-max: 480px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
