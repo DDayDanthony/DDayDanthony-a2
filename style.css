@@ -173,3 +173,15 @@ class: glitch-img - base style for all transformed images
     height: auto;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
+
+/* Transformation 1: noise as signal 
+CSS properties: hue rotate, contrast, brightness
+concept: interferance as a productive signal
+*/
+
+.noise-signal {
+    filter: hue-rotate(120deg) contrast(2.2) brightness(1.4);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 40px rgba(232, 255, 0, 0.25)
+}
+
