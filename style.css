@@ -1,9 +1,9 @@
 /*
-Style.css -A2: One Image x5
+Style.css - A2: One Image x5
 Project structure: index.html, style.css, images/image.png
 */
 
-<!-- specifications of CSS file -->
+/* specifications of CSS file */
 
 :root {
   --bg: #0a0a0a;
@@ -20,7 +20,7 @@ Project structure: index.html, style.css, images/image.png
 
 *, *::before, *::after {
   box-sizing: border-box;
-margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -37,22 +37,22 @@ body {
   overflow-x: hidden;
 }
 
-<!-- Added all of my base CSS styles such as color, font, size, etc. -->
+/* Added all of my base CSS styles such as color, font, size, etc. */
 
 /*
 ID: page-header - top hero area
 */
 #page-header {
-    Padding: 5rem 2rem 3rem;
+    padding: 5rem 2rem 3rem;
     text-align: center;
-    border-bottom 1px solid #222
+    border-bottom: 1px solid #222;
 }
 
 #page-header h1 {
     font-family: var(--font-display);
     font-size: clamp(2rem, 6vw, 4rem);
     letter-spacing: 0.08em;
-    text transform: uppercase;
+    text-transform: uppercase;
     color: var(--accent);
     text-shadow: 0 0 30px rgba(232, 255, 0, 0.35);
 }
@@ -78,6 +78,7 @@ Class: transformation - each section wrapper
     border-bottom: 1px solid #1a1a1a;
     min-height: 100vh;
 }
+
 .transformation:nth-child(odd) {
     flex-direction: row;
 }
@@ -88,7 +89,7 @@ Class: transformation - each section wrapper
 }
 
 /*
-Class: lable-block - text discription side
+Class: label-block - text description side
 */
 .label-block {
     flex: 1 1 300px;
@@ -101,13 +102,13 @@ Class: lable-block - text discription side
     font-weight: bold;
     color: #1e1e1e;
     display: block;
-    line height: 1;
+    line-height: 1;
     margin-bottom: 0.5rem;
     -webkit-text-stroke: 1px #333;
 }
 
 /*
-class: transform-title - heading for each transformation 
+class: transform-title - heading for each transformation
 */
 .transform-title {
     font-family: var(--font-display);
@@ -118,8 +119,7 @@ class: transform-title - heading for each transformation
     margin-bottom: 1.2rem;
 }
 
-/* class: manifesto concept - links to glitch studies reading 
-*/
+/* class: manifesto-concept - links to glitch studies reading */
 .manifesto-concept {
     font-size: 0.9rem;
     color: var(--text-muted);
@@ -133,11 +133,10 @@ class: transform-title - heading for each transformation
     font-size: 0.85rem;
     color: var(--accent3);
     margin-bottom: 0.6rem;
-  font-family: var(--font-display);
+    font-family: var(--font-display);
 }
 
-/* class: connection - explains how css ties into the concept 
-*/
+/* class: connection - explains how css ties into the concept */
 .connection {
     font-size: 0.9rem;
     color: var(--text-muted);
@@ -145,12 +144,12 @@ class: transform-title - heading for each transformation
 }
 
 code {
-   Background: #1a1a1a;
-   padding: 0.1rem 0.35rem;
+    background: #1a1a1a;
+    padding: 0.1rem 0.35rem;
     border-radius: 3px;
     font-family: var(--font-display);
     font-size: 0.8rem;
-    color: var (--accent3);
+    color: var(--accent3);
 }
 
 /*
@@ -173,3 +172,4 @@ class: glitch-img - base style for all transformed images
     max-width: var(--img-max);
     height: auto;
     transition: transform 0.4s ease, filter 0.4s ease;
+}
