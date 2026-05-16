@@ -185,3 +185,15 @@ concept: interferance as a productive signal
     box-shadow: 0 0 40px rgba(232, 255, 0, 0.25)
 }
 
+  /* Transformation 2: Failure as asthetic
+  CSS properties: clip-path, skewX, skew Y, border
+  Concept:Embracing the malfunction as a style
+*/
+.failure-aesthetic {
+    clip-path: polygon(0 8%, 92%% 0, 100% 88%, 6% 100%);
+    transform: skewX(-6deg) skewY(3deg);
+    border: 2px solid var(--accent2);
+    outline: 2px dashed #ff2d5566;
+    box-shadow: 8px 8px 0 var(--accent2);
+    outline offset 10 px;
+}
