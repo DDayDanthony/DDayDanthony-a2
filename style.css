@@ -207,3 +207,12 @@ Concept: Exposing the hidden structure underneath the image
     opacity: 0.88;
     border: 1px solid #444;
 }
+
+.repetition-difference {
+  transform: scale(1.08) rotate(-5deg) translateX(12px);
+  box-shadow:
+    -10px -10px 0 var(--accent),
+    10px 10px 0 var(--accent2),
+    -20px 20px 0 var(--accent3);
+  outline: 1px solid var(--accent3);
+  outline-offset: 6px;
