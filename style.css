@@ -197,3 +197,13 @@ concept: interferance as a productive signal
     box-shadow: 8px 8px 0 var(--accent2);
     outline offset 10 px;
 }
+
+/* Transformation 3: The accident reveals the system
+CSS properties: invert, grayscale, sepia, opacity
+Concept: Exposing the hidden structure underneath the image
+*/
+.reveals-system {
+    filter: invert(1) grayscale(0.7) sepia(0.5);
+    opacity: 0.88;
+    border: 1px solid #444;
+}
