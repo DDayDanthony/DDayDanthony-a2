@@ -190,12 +190,12 @@ concept: interferance as a productive signal
   Concept:Embracing the malfunction as a style
 */
 .failure-aesthetic {
-    clip-path: polygon(0 8%, 92%% 0, 100% 88%, 6% 100%);
+    clip-path: polygon(0 8%, 92% 0, 100% 88%, 6% 100%);
     transform: skewX(-6deg) skewY(3deg);
     border: 2px solid var(--accent2);
     outline: 2px dashed #ff2d5566;
     box-shadow: 8px 8px 0 var(--accent2);
-    outline offset 10 px;
+    outline-offset: 10px;
 }
 
 /* Transformation 3: The accident reveals the system
@@ -216,3 +216,4 @@ Concept: Exposing the hidden structure underneath the image
     -20px 20px 0 var(--accent3);
   outline: 1px solid var(--accent3);
   outline-offset: 6px;
+}
