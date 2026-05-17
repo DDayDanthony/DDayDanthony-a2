@@ -249,3 +249,32 @@ letter-spacing: 0.2em;
 text-transform: uppercase;
 border-top: 1px solid #1a1a1a;
 }
+
+/*
+Bonus mobile scaling 
+*/
+
+@media (max-width: 768px) {
+    .transformation {
+        flex-direction: column !important;
+        padding: 3rem 1.5rem;
+        min-height: unset;
+    }
+
+    .label-block {
+        max-width: 100%;
+ }
+
+.glitch-img {
+    max-width: 100%;
+    }
+
+#page-header h1 {
+    font-size: 1.8rem;
+    }
+
+    .transform-number {
+        font-size: 3rem;
+    }
+}
+
