@@ -208,6 +208,10 @@ Concept: Exposing the hidden structure underneath the image
     border: 1px solid #444;
 }
 
+/* Transformation 4: Repetition and Difference
+   CSS properties: scale, rotate, translateX, box-shadow, outline
+   Concept: Same source, diverged result through iteration
+*/
 .repetition-difference {
   transform: scale(1.08) rotate(-5deg) translateX(12px);
   box-shadow:
@@ -216,4 +220,17 @@ Concept: Exposing the hidden structure underneath the image
     -20px 20px 0 var(--accent3);
   outline: 1px solid var(--accent3);
   outline-offset: 6px;
+}
+
+/* 
+Transormation 5: Corruption of the orginal
+CSS properties: blur, saturate, mix-blend-mode, opacity
+Concept: Identity dissolved - the original destabilized
+*/ 
+.corrupted-original {
+    filter: blur(2.5px) saturate(6);
+    mix-blend-mode: difference;
+    opacity: 0.9;
+    border: 2px solid var(--accent3);
+    box-shadow: 0 0 60px rgba(0, 229, 255, 0.35);
 }
